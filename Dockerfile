@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update \
- install -y -q nginx
+RUN apt-get update && install -y -q nginx
 
 COPY ./index.html /usr/share/nginx/html/
 
